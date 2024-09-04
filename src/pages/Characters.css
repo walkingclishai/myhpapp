@@ -1,0 +1,14 @@
+.grid-container{
+    padding-top: 70px;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+margin: 10px auto auto auto;
+
+}
+
+.load{
+    grid-column: 2;
+}
