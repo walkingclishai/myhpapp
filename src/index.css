@@ -5,6 +5,10 @@
                                                 
 }
 
+body{
+  margin: auto;
+}
+
 
 nav {
   background-color: #000;
@@ -16,6 +20,7 @@ nav {
   z-index: 1;
   width: 100%;
   top: 0;
+  right: 8px;
 }
 
 nav ul {
@@ -55,51 +60,8 @@ nav svg{
 }
 
 
-/* card */
-
-.container{
-  height: 300px;
-  width: 300px;
-  border: 1px solid grey;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container img{
-  height: 50%;
-  width: 30%;
-  margin-top: 5px;
-}
 
 
-/* spell */
 
-.spell-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px;
-  width:199px;
-  text-align:center;
-  height: 300px;
-  box-shadow: 2px 2px 5px black;;
-}
-
-.spell-container h2{
-  font-weight: bold;
-  background: linear-gradient(45deg, #3e3986, #1a1503);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-}
-
-.spell-container img{
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-}
 
 

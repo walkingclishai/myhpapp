@@ -1,13 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import Characters from "./pages/Characters";
+import Spells from "./pages/Spells";
+import Houses from "./pages/Houses";
+import Dashboard from "./pages/dashboard";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/characters" element={<Characters />} />
+        <Route path="/spells" element={<Spells />} />
+        <Route path="/houses" element={<Houses />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

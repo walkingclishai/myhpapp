@@ -1,0 +1,31 @@
+/* spell */
+
+.spell-container{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width:199px;
+    text-align:center;
+    height: 300px;
+    box-shadow: 2px 2px 5px black;
+    background-image: linear-gradient(transparent, grey);
+  }
+  
+  .spell-container h2{
+    font-weight: bold;
+    color: #3e3986;
+    text-shadow: 2px 2px 4px white;
+    margin: 10px;
+  }
+  
+  .spell-container img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .spell-container p{
+    color:#fff;
+  }

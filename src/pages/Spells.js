@@ -21,6 +21,8 @@ function Spells() {
   return (
     <div className="App">
       <Header />
+      <h1>Spells</h1>
+
       <div className="grid-container">
         {spells.map((item, index) =>
           index < 9 * span ? (

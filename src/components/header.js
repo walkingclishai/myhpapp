@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function Header() {
+  const navigate = useNavigate();
+
   return (
     <nav>
       <img alt="logo" height="60px" width="150px" src="/logo4.png" />
@@ -20,16 +24,16 @@ function Header() {
       </div>
       <ul>
         <li>
-          <a>Dashboard</a>
+          <a onClick={() => navigate("/")}>Dashboard</a>
         </li>
         <li>
-          <a>Characters</a>
+          <a onClick={() => navigate("/characters")}>Characters</a>
         </li>
         <li>
-          <a>Spells</a>
+          <a onClick={() => navigate("/spells")}>Spells</a>
         </li>
         <li>
-          <a>Houses</a>
+          <a onClick={() => navigate("/houses")}>Houses</a>
         </li>
       </ul>
     </nav>

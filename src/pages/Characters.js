@@ -21,6 +21,7 @@ function Characters() {
   return (
     <div className="App">
       <Header />
+      <h1>Harry Potter Characters</h1>
       <div className="grid-container">
         {characters.map((item, index) =>
           index < 9 * span ? (
