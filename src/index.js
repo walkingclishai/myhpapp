@@ -6,6 +6,7 @@ import Spells from "./pages/Spells";
 import Houses from "./pages/Houses";
 import Dashboard from "./pages/Dashboard";
 import Fullcharacter from "./pages/Fullcharacter";
+import Results from "./pages/Results";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -20,6 +21,7 @@ root.render(
         <Route path="/spells" element={<Spells />} />
         <Route path="/houses" element={<Houses />} />
         <Route path="/fullcharacter" element={<Fullcharacter />} />
+        <Route path="/results" element={<Results />} />
       </Routes>
     </Router>
   </React.StrictMode>

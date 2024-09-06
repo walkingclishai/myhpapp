@@ -1,13 +1,21 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Header() {
   const navigate = useNavigate();
+
+  const [input, setInput] = useState("");
+
+  const handleSearch = () => {
+    navigate("/results", { state: { res: input } });
+  };
 
   return (
     <nav>
       <img alt="logo" height="60px" width="150px" src="/logo4.png" />
       <div>
         <svg
+          onClick={handleSearch}
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
           height="1em"
@@ -20,7 +28,14 @@ function Header() {
             clip-rule="evenodd"
           />
         </svg>
-        <input type="search" placeholder="...search"></input>
+        <input
+          type="search"
+          placeholder="...search"
+          onChange={(e) => {
+            setInput(e.target.value);
+          }}
+          value={input}
+        ></input>
       </div>
       <ul>
         <li>
