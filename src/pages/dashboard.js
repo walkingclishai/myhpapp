@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import "./dashboard.css";
+import "./Dashboard.css";
 import Slider from "../components/Slider";
 import React, { useEffect, useState } from "react";
 

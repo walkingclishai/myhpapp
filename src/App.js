@@ -6,11 +6,7 @@ import Spells from "./pages/Spells";
 import Houses from "./pages/Houses";
 
 function App() {
-  return (
-    <div className="App">
-      <Houses />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;

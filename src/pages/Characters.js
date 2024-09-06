@@ -26,6 +26,7 @@ function Characters() {
         {characters.map((item, index) =>
           index < 9 * span ? (
             <Card
+              cardId={item.id}
               name={item.name}
               image={item.image}
               altName={item.alternate_names[0]}

@@ -4,7 +4,8 @@ import "./index.css";
 import Characters from "./pages/Characters";
 import Spells from "./pages/Spells";
 import Houses from "./pages/Houses";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
+import Fullcharacter from "./pages/Fullcharacter";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -18,6 +19,7 @@ root.render(
         <Route path="/characters" element={<Characters />} />
         <Route path="/spells" element={<Spells />} />
         <Route path="/houses" element={<Houses />} />
+        <Route path="/fullcharacter" element={<Fullcharacter />} />
       </Routes>
     </Router>
   </React.StrictMode>
