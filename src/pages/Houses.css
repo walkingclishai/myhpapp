@@ -79,19 +79,19 @@ span{
     margin-top: -4px;
   }
 
-  table {
+ .house-card table {
     margin-top: -4px;
     width: 100%;
     border-collapse: collapse;
   }
   
-  td {
+  .house-card td {
     padding: 8px;
     border: 1px solid grey;
     text-align: left;
   }
   
-  tr:nth-child(even) {
+  .house-card tr:nth-child(even) {
     background-color: #f2f2f2;
   }
   
