@@ -6,6 +6,11 @@ function Header() {
 
   const [input, setInput] = useState("");
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleSearch();
+    }
+  };
   const handleSearch = () => {
     navigate("/results", { state: { res: input } });
   };
@@ -29,6 +34,7 @@ function Header() {
           />
         </svg>
         <input
+          onKeyPress={handleKeyPress}
           type="search"
           placeholder="...search"
           onChange={(e) => {
