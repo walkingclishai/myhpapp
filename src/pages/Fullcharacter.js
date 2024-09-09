@@ -26,7 +26,7 @@ function Fullcharacter() {
             <div className="img-container">
               <img className="char-logo" src={item.image} />
               <img
-                className="banner"
+                className="char-banner"
                 src={
                   item.house == "Gryffindor"
                     ? "/banner 2.png"

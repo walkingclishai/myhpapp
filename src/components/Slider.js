@@ -1,4 +1,4 @@
-const Slider = ({ imageSrc, title, onLearnMore, onNext, onPrev }) => {
+const Slider = ({ imageSrc, title, link, onNext, onPrev }) => {
   return (
     <div className="slider-container">
       <div>
@@ -32,7 +32,9 @@ const Slider = ({ imageSrc, title, onLearnMore, onNext, onPrev }) => {
       </div>
       <div className="overlay">
         <h2>{title}</h2>
-        <button onClick={onLearnMore}>Learn More</button>
+        <button>
+          <a href={link}>Learn More</a>
+        </button>
       </div>
     </div>
   );

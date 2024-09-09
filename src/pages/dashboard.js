@@ -4,14 +4,10 @@ import Slider from "../components/Slider";
 import React, { useEffect, useState } from "react";
 
 function Dashboard() {
-  const handleLearnMore = () => {
-    console.log("Learn More clicked");
-  };
-
   const slides = [
-    { image: "/charcaters 2.jpg", title: "Characters" },
-    { image: "/spells 2jpg.jpg", title: "Spells" },
-    { image: "/houses.jpg", title: "Houses" },
+    { image: "/charcaters 2.jpg", title: "Characters", link: "/characters" },
+    { image: "/spells 2jpg.jpg", title: "Spells", link: "/spells" },
+    { image: "/houses.jpg", title: "Houses", link: "/houses" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,7 +36,7 @@ function Dashboard() {
       <Slider
         imageSrc={slides[currentIndex].image}
         title={slides[currentIndex].title}
-        onLearnMore={handleLearnMore}
+        link={slides[currentIndex].link}
         onNext={goToNextSlide}
         onPrev={goToPrevSlide}
       />
